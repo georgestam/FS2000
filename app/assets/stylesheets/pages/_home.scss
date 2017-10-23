@@ -1,0 +1,32 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+
+.background_main_image {
+    background-size: cover;
+    align-items: center;
+
+}
+
+
+
+.team_pic {
+  display: inline;
+  height: 150px;
+  width: 150px;
+
+  // width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+
+
+#btn-black {
+
+    background-color: #222222;
+    border-color: #222222;
+
+}

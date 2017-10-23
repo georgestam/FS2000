@@ -1,0 +1,227 @@
+---
+en:
+  articles:
+    index:
+      home: Home
+      news: News
+    show:
+      home: Home
+      news: News
+  mailers:
+    users:
+      creation:
+        user_mailer:
+          welcome:
+            hello: Hello
+            p1: Thank you for registering with Starfish!
+            p2: We welcome you to the Starfish Project. We do not promise a non-existent
+              cure for stuttering, we will not try and hypnotise you, or sell you
+              and ask you to wear any gadget or device. Our aim is to provide decent,
+              effective therapy with free lifetime support, to as many people who
+              stutter as possible, to control stuttering.
+            p3: If you have any questions, suggestions or issues you can just reply
+              to this email. My name is Rakan, and I will get back to you quickly.
+            p4: From now on you will enjoy of being part of our amazing community
+              for people who stutter.
+            p5: ''
+            p6: ''
+            p7: ''
+            p8: Rakan Otaibi
+  pages:
+    coming_soon:
+      coming_soon: Coming soon
+      coming_soon_decription: Coming soon
+    courses:
+      apply_now: Apply now
+      call_to_action_1: Starfish Project Arabia
+      call_to_action_2: It's Happening!
+      courses: Courses
+      courses_description_html: The Starfish Project brings together years of experience
+        from working with other therapies. We have combined the best from the early
+        pioneering work of these therapies, together with the experiences and lessons
+        we have learned from helping in the recovery of many hundreds of people from
+        stammering over the years. Your Starfish training commences with a three-day
+        course. <br><br> Training on all Starfish courses is on a one to one basis,
+        given by recovering stammerers. It combines compassion and care throughout
+        in teaching proven successful methods of diaphragmatic retraining (costal
+        breathing), avoidance reduction therapy and positive attitude development.
+        On a Starfish Project training course, we are ever mindful of the individuality
+        of every stammerer, and that their recovery from stammering will be at their
+        own pace and in their own time. <br><br> For this reason, we always restrict
+        the number of people on a course, to ensure the maximum individual attention.
+        We have regular breaks during the day, and of course at lunch time, to ensure
+        you stay ‘fresh’. We keep a training day to your maximum input level – not
+        your exhaustion point. Days start at 9 a.m. and finish between 5 and 6 p.m.
+        <br><br> We want to help you learn control, not to break you! In the evenings
+        there is plenty of opportunity to practise your new technique in a relaxed
+        social situation and around the table during dinner, together with everyone
+        else on the course, in the hotel restaurant.
+      courses_title: Courses
+      finish: Finish
+      graduates: Refreshers
+      number_of_courses: 220
+      number_of_graduates: 2000
+      number_of_hours: 6600
+      start: Start
+      upcoming_courses: Upcoming courses
+      working_hours: Working hours
+    home:
+      apply_now: Apply now
+      call_to_action: Apply now
+      home_subtitle_1: Supportive Training and Recovery For Individual Stammerers
+        Harmony
+      home_subtitle_2: ''
+      home_title: Starfish Project Arabia
+    media:
+      more_news: More news
+      more_stories: More stories
+      testimonial1_long_recomendation: "‘My experience in Starfish has changed my
+        life and made me energetic productive person!"
+      testimonial1_name: Dr. Hassan Allam
+      testimonial1_short_recomendation: Changed my Life!
+      testimonial1_title: ''
+      testimonial2_long_recomendation: |-
+        Proud recovering stammerer,
+        Thanks Starfish. You made me a better leader and a better man.
+      testimonial2_name: Eng. Abdullah AlAzizi
+      testimonial2_short_recomendation: Proud recovering stammerer!
+      testimonial2_title: ''
+      testimonial3_long_recomendation: Starfish changed my life,
+      testimonial3_name: Abdulaziz AlKhasrami
+      testimonial3_short_recomendation: Thanks Mom for telling me about Starfish!
+      testimonial3_title: ''
+    summary:
+      features_description: Your training does not end after the three day initial
+        course, for it is now that The Starfish Project on-going care begins with
+        FREE lifetime support, which is so essential to your recovery.
+      features_moto: We are here to help YOU!
+      summary_description_html: We welcome you to the Starfish Project. We do not
+        promise a non-existent cure for stuttering, we will not try and hypnotise
+        you, or sell you and ask you to wear any gadget or device. Our aim is to provide
+        decent, effective therapy with free lifetime support, to as many people who
+        stutter as possible, to control stuttering. Our aim is to provide that therapy
+        without making huge profits out of your misfortune of having a Stutter (Stammer).
+        We hope that you find the joy of effortless speech with the Starfish Project.<br><br>.The
+        Starfish Project has been invited to come to the Emirates by Rakan Otaibi
+        a recovering stutterer from Saudi Arabia. Rakan became very disillusioned
+        by the way that diaphragmatic retraining (costal breathing), was introduced
+        into the U.A.E. by expensive franchised multi-level marketing. Rakan believes
+        that the introduction of the Starfish Project will help to bring effective,
+        accessible and supported therapy to a greater numbers of people who stammer
+        in the region at a decent affordable price. We are planning our first course
+        for 2016 to be held in Dubai. Please contact us for more details of this course.
+    team:
+      team1_description: Intellectually curious, Dynamic and proactive engineer with
+        an entrepreneur mind.
+      team1_name: Rakan AlOtaibi
+      team1_title: Mechanical Engineer & Entrepreneur
+      team2_description: Passionate scientist with a PhD in medical Virology, keen
+        on helping stutterers overcome their obstacles
+      team2_name: Shaihana AlMatrrouk
+      team2_title: Viral oncology (PhD)
+    who_we_are:
+      free_support: Free support
+      free_support_description_html: "<p><strong>Your training does not end after
+        the three day initial course, for it is now that The Starfish Project on-going
+        care begins with FREE lifetime support, which is so essential to your recovery</strong>.</p>
+        <p>Lack of back up support &#8211; is by far the most common reason given
+        on Starfish course application forms in reply to &#8216;why do you think other
+        therapies didn&#8217;t work for you ?&#8217; It is for this reason that in
+        depth, on-going, FREE lifetime support is such an essential part of Starfish.<br/>
+        \n\nThe combination of your commitment to recovery from stammering and the
+        on-going care and follow up from everyone involved in The Starfish Project
+        will be the foundation of your future of controlled effortless speech.</p>"
+      the_starfish_story: The starfish story
+      the_starfish_story_description_html: "<p>A man was walking along a deserted
+        beach at sunset.<br /><br> As he walked he could see a young boy in the distance,
+        as he drew nearer he noticed that the boy kept bending down, picking something
+        up and throwing it into the water.<br /><br> Time and again he kept hurling
+        things into the ocean.<br/><br> As the man approached even closer, he was
+        able to see that the boy was picking up starfish that had been washed up on
+        the beach and, one at a time he was throwing them back into the water.<br
+        /><br> The man asked the boy what he was doing, the boy replied,&#8221; I
+        am throwing these washed up starfish back into the ocean, or else they will
+        die through lack of oxygen.<br /><br> &#8220;But&#8221;, said the man, &#8220;You
+        can&#8217;t possibly save them all, there are thousands on this beach, and
+        this must be happening on hundreds of beaches along the coast. You can&#8217;t
+        possibly make a difference.&#8221;<br /><br> The boy smiled, bent down and
+        picked up another starfish, and as he threw it back into the sea, he replied
+        <strong>&#8220;Made a difference to that one&#8221;</strong></p>"
+      video: Video
+      what_is_stuttering: What is stuttering?
+      what_is_stuttering_description_html: "<p><strong>Stuttering and Stammering </strong>are
+        two different words that are used to describe the same condition. Generally
+        speaking &#8216;stuttering&#8217; is used more commonly in North America,
+        Australia, and the Middle East while in UK they tend to use the word &#8216;stammering&#8217;.</p>
+        <p>We do not know <strong>what causes stuttering</strong>, but research shows
+        that a combination of factors is involved. Stammering affects four times as
+        many men as women. Statistics show us that approximately 5 million plus adults
+        in the Arabic countries stutter, which is about 1% of the adult population.</p>
+        <p>It is vital to recognise that everyone who stammers is different, and stammers
+        differently. Everyone is an <strong>individual</strong> and any therapy or
+        training must respect your individuality. Therefore, every person who stammers
+        is potentially an expert on their own stammering. Recognising and always respecting
+        these very important facts is the foundation to The Starfish Project and its
+        success in helping people in their <strong>recovery from stuttering</strong>.</p>
+        <p><b>Stuttering</b> &#8211; is generally characterized by repetitions (sounds,
+        syllables, part-words, whole words, phrases), pauses, and prolongations that
+        differ in number and severity from those of &#8216;normally fluent&#8217;
+        individuals. Whilst other disorders are characterised by disfluent speech,
+        the patterns of disfluency in these other disorders differ from that seen
+        in developmental stuttering."
+  shared:
+    footer:
+      contact_us: Contact us
+      contact_us_description: If you have any questions, suggestions or issues you
+        can send us an email or call us.
+      starfish_address: GCC
+      starfish_email: speak@starfishproject.io
+      starfish_mobile: 966563556865
+    navbar:
+      contact: Contact
+      courses: Courses
+      media: Media
+      summary: Summary
+      team: Team
+      who_we_are: Who we are?
+    navbar_media:
+      contact: Contact
+      home: Home
+    navbar_top:
+      arabic: Arabic
+      email: speak@starfishproject.io
+      english: English
+      login: Login
+      phone: 966563556865
+  stories:
+    index:
+      home: Home
+      our_stories: Our stories
+    show:
+      home: Home
+      story: Story
+  users:
+    creation:
+      user_mailer:
+        welcome:
+          welcome_to_starfish: Welcome to starfish
+  views:
+    articles:
+      index:
+        articles: Articles
+    pages:
+      form: Form
+      summary:
+        image_title1: Starfish Project Arabia
+        image_title2: Starfish Project Arabia
+        image_title3: Starfish Project Arabia
+    shared:
+      footer:
+        email: email
+        mobile: Mobile (optional)
+        name: name
+        subscribe: Subscribe
+    starfish_title: Starfish Project Arabia
+    stories:
+      index:
+        stories: Stories

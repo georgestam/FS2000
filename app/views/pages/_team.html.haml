@@ -1,0 +1,66 @@
+#team
+
+/ main-container start
+/ ================
+%section.main-container{dir: @dir}
+  .container
+    .row
+      / main start
+      / ================
+      .main.col-md-12
+        / page-title start
+        / ================
+        / page-title end
+        .image-box.team-member.style-3-b
+          .row
+            .col-xs-12.col-md-3.col-md-offset-1
+              .overlay-container.overlay-visible
+                = cl_image_tag "rakan", class:"", :title => "Rakan", :client_hints=>true, 
+                :transformation=>[{:width=>400, :height=>400, :gravity=>"face", :crop=>"crop"},
+                {:width=>200, :crop=>"scale"}]
+        
+            .col-xs-12.col-md-8
+              .body
+                %h3.title.margin-clear
+                  = t '.team1_name' 
+                  %small 
+                    = t '.team1_title' 
+                .separator-2.mt-10
+                %p 
+                  = t '.team1_description' 
+                %ul.social-links.circle.margin-clear.colored
+                  %li.twitter
+                    %a{:href => "https://www.linkedin.com/in/rakan-alsaqer-7653302a/", :target => "_blank"}
+                      %i.fa.fa-linkedin
+                  %li.linkedin
+                    %a{:href => "https://twitter.com/r4k4n?lang=en", :target => "_blank"}
+                      %i.fa.fa-twitter
+                      
+        .image-box.team-member.style-3-b
+          .row
+            .col-xs-12.col-md-3.col-md-offset-1
+              .overlay-container.overlay-visible
+                = cl_image_tag "ST-UEA/Team_2.jpg", class:"", :title => "Rakan", :client_hints=>true, 
+                :transformation=>[{:width=>600, :height=>600, y: 100, x:200, :crop=>"crop"},
+                {:width=>200, :crop=>"scale"}]
+        
+            .col-xs-12.col-md-8
+              .body
+                %h3.title.margin-clear
+                  = t '.team2_name' 
+                  %small 
+                    = t '.team2_title' 
+                .separator-2.mt-10
+                %p 
+                  = t '.team2_description' 
+                %ul.social-links.circle.margin-clear.colored
+                  %li.twitter
+                    %a{:href => " https://www.linkedin.com/in/shaihana-almatrrouk-phd-2a4aab39/", :target => "_blank"}
+                      %i.fa.fa-linkedin
+                  %li.linkedin
+                    %a{:href => "https://www.twitter.com/shihana3", :target => "_blank"}
+                      %i.fa.fa-twitter
+
+
+  
+

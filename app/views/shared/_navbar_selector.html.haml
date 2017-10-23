@@ -1,0 +1,4 @@
+- if request.original_fullpath == "/en" || request.original_fullpath ==  "/ar" || request.original_fullpath ==  "" 
+  = render 'shared/navbar'
+- else
+  = render 'shared/navbar_media'

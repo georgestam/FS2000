@@ -1,0 +1,147 @@
+-# navbar banner from http://www.wedproductions.com/
+
+:ruby
+  border = 1
+  line = 36
+
+:sass
+  #top-bar 
+    position: relative
+    color: #555
+    background-color: #f1f1f1
+    border-bottom: #{border}px solid #e8e8e8
+    line-height: #{line}px
+    box-sizing: border-box
+    font-family: "Open Sans", Arial, sans-serif
+    font-size: 13px
+    font-style: normal
+    font-weight: 400
+
+  .cs-top-module 
+    vertical-align: top
+    display: inline-block
+    position: relative
+    padding: 0 6px
+    margin-right: -1px
+    border-left: 1px solid #e8e8e8
+    border-right: 1px solid #e8e8e8
+    font-size: 11px
+    line-height: 35px
+  .cs-top-module:first-child 
+    border-left: none
+    padding-left: 0
+  .cs-top-module:last-child 
+    border-right: none
+    padding-right: 0
+  .cs-top-module > a,
+  .cs-top-module .cs-open-modal 
+    color: #333
+    display: inline-block
+  .cs-top-module > a:hover,
+  .cs-top-module .cs-open-modal:hover 
+    color: #428bca
+    text-decoration: none
+  .cs-top-module .cs-in 
+    margin-right: 5px
+  .cs-top-module .cs-down 
+    margin-left: 2px
+  .cs-top-left 
+    float: left
+    margin-bottom: -1px
+    
+  .cs-top-right 
+    float: right
+    margin-bottom: -1px
+    
+  .cs-modal-content 
+    display: none
+    position: absolute
+    z-index: 250
+    left: 0
+    width: 300px
+    padding: 10px
+    font-size: 12px
+    line-height: 1.7em
+    margin-top: -2px
+    color: #555
+    background-color: #fff
+    border-top: 2px solid #428bca
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125)
+    
+  #site-nav .cs-module-search
+  .cs-top-right .cs-modal-content 
+    left: auto !important
+    right: 0
+  .cs-module-search .cs-search-form 
+    margin: -10px
+  .cs-module-search input 
+    font-size: 12px !important
+    border: none !important
+    padding: 19px 30px 19px 12px
+    height: 50px !important
+    line-height: 15px !important
+    -webkit-box-shadow: none !important
+    box-shadow: none !important
+    -webkit-border-radius: 0 !important
+    -moz-border-radius: 0 !important
+    border-radius: 0 !important
+  .cs-module-search input:focus 
+    -webkit-box-shadow: none !important
+    box-shadow: none !important
+  .cs-module-search button 
+    top: 15px !important
+  .cs-module-social 
+    margin: 0
+    padding: 0
+    border: none
+    z-index: 1
+  .cs-module-social a 
+    display: inline-block
+    font-size: 12px
+    text-align: center
+    vertical-align: top
+    line-height: 36px
+    width: 36px
+  .cs-module-social a:hover 
+    color: #fff !important
+    background-color: #428bca
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1)
+  .cs-module-social .cs-in 
+    margin: 0
+    
+  
+#top-bar
+  .container
+    .row
+      .col-sm-6
+        .cs-top-left
+          .cs-top-module.cs-module-text
+            %i.cs-in.fa.fa-whatsapp
+            = t '.phone'
+          .cs-top-module.cs-module-link
+            %i.cs-in.fa.fa-envelope-o
+            -# %a{:href => "mailto:info@wedproductions.com", :target => ""}
+            = t '.email'
+      .col-xs-12.col-sm-6
+        .cs-top-right
+          .cs-top-module.cs-module-wpml
+            .cs-top-modal.cs-lang-top-modal
+              %a.cs-open-modal1
+                %i.cs-in.fa.fa-globe
+                - if I18n.locale == :ar
+                  = link_to (t '.english'), url_for( :locale => 'en'), id: "change-to-english"
+                - else
+                  = link_to (t '.arabic'), url_for( :locale => 'ar'), id: "change-to-arabic"
+                  
+          .cs-top-module.cs-module-social
+            -# %a.cs-in.fa.fa-facebook{:href => "https://www.facebook.com/WedProductions", :target => "_blank"}
+          .cs-top-module.cs-module-social
+            -# %a.cs-in.fa.fa-twitter{:href => "https://twitter.com/r4k4n", :target => "_blank"}
+            = link_to t(".login"), coming_soon_path
+          .cs-top-module.cs-module-social
+            -# %a.cs-in.fa.fa-google-plus{:href => "https://plus.google.com/b/111342773125867225323/111342773125867225323/about", :target => "_blank"}
+          .cs-top-module.cs-module-social
+            -# %a.cs-in.fa.fa-linkedin{:href => "https://www.linkedin.com/company/wed-productions", :target => "_blank"}
+    / /top-bar

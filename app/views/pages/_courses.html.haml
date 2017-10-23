@@ -1,0 +1,93 @@
+:sass
+  .margin-left
+    margin: 0 0 0 20px
+
+
+#courses.linked
+%section.section.light-gray-bg.clearfix{dir: @dir}
+  .container
+    .row
+      .col-md-6
+        %p
+          %strong 
+            = t ".courses_title"
+        %p 
+          = t ".courses_description_html"
+      .col-xs-6.col-md-4.col-md-push-1
+        %h3
+          %span.text-default 
+            = t ".upcoming_courses"
+        .separator-2
+        - if @courses.any?
+          - @courses.reverse.each do |course|
+            .small
+              %i.fa.fa-calendar.pr-10
+              = t ".start"
+              = ":"
+              = course.date_start.strftime("%A, %d %b %Y")
+              = succeed course.time_start.strftime("%l %M %p") do
+                %i.fa.fa-clock-o.pl-10.pr-10
+              %br
+              %i.fa.fa-calendar.pr-10
+              = t ".finish"
+              = ":"
+              = course.date_finish.strftime("%A, %d %b %Y") 
+            %h5
+              %i.fa.fa-map-marker.pr-10
+              = course.location 
+            = course.description
+            %hr
+          %a.btn.btn-gray-transparent.btn-sm.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
+            = t '.apply_now'
+            %i.fa.fa-arrow-right.pl-20
+          %br
+        
+
+/ section start
+/ ================
+%section.pv-40.stats.padding-bottom-clear.parallax.dark-translucent-bg.background-img-7{:style => "background-position: 50% 50%;"}
+  .clearfix
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-diamond
+        %h3
+          %strong 
+            = t '.courses'
+        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.courses if Stat.any?}"} 0
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-users
+        %h3
+          %strong 
+            = t '.graduates'
+        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.refreshers if Stat.any?}"} 0
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-cloud-download
+        %h3
+          %strong 
+            = t '.working_hours' 
+        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.working_hours if Stat.any?}"} 0
+  / footer top start
+  / ================
+
+  .footer-top.animated-text{:style => "background-color:rgba(0,0,0,0.3);"}
+    .container{dir: @dir}
+      .row
+        .col-md-12
+          .call-to-action.text-center
+            .row
+              .col-sm-8
+                %h2 
+                  = t '.call_to_action_1'
+                %h2 
+                  = t '.call_to_action_2' 
+              .col-sm-4
+                %p.mt-10
+                  %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
+                    = t '.apply_now'
+                    %i.fa.fa-arrow-right.pl-20
+/ section end

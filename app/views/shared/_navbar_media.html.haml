@@ -1,0 +1,72 @@
+%body
+  .page-wrapper
+    / header-container start
+    .header-container
+      / header start
+      / classes:
+      / "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix"
+      / "dark": dark version of header e.g. class="header dark clearfix"
+      / "full-width": mandatory class for the full-width menu layout
+      / "centered": mandatory class for the centered logo layout
+      / ================
+      %header.header.fixed.clearfix
+        = render 'shared/navbar_top'
+        %div{:style => "padding: 0px 50px 0px 50px !important;"}
+          .row
+            .col-xs-12.col-md-3
+              / header-left start
+              / ================
+              .header-left.clearfix
+                / logo
+                %ul.nav.navbar-languages{:style => "float: left !important"}
+                  %li
+                    #logo.navbar-wagon-brand.smooth-scroll
+                      %a{:href => "/"}
+                        %img#logo_img{:alt => "ST-UEA", :src => "https://res.cloudinary.com/georgestam/image/upload/v1493243416/ST-UEA/star-green.png"}/
+                  %li
+                    %img#logo_img{:alt => "ST-UEA", :src => "https://res.cloudinary.com/georgestam/image/upload/v1493243416/ST-UEA/letters.png", style: "height: 60px !important"}/
+                  %li
+                  %li
+              / header-left end
+            .col-xs-12.col-md-9
+              / header-right start
+              / ================
+              .header-right.clearfix
+                / main-navigation start
+                / classes:
+                / "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick"
+                / "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated"
+                / "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns
+                / ================
+                .main-navigation.animated
+                  / navbar start
+                  / ================
+                  %nav.navbar.navbar-default{:role => "navigation"}
+                    .container-fluid
+                      / Toggle get grouped for better mobile display
+                      .navbar-header
+                        %button.navbar-toggle{"data-target" => "#navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+                          %span.sr-only Toggle navigation
+                          %span.icon-bar
+                          %span.icon-bar
+                          %span.icon-bar
+                      / Collect the nav links, forms, and other content for toggling
+                      #navbar-collapse-1.collapse.navbar-collapse.scrollspy.smooth-scroll
+                        %ul.nav.navbar-nav.navbar-right
+                          %li
+                            = link_to t(".home"), root_path, class: "navbar-wagon-item navbar-wagon-link"
+                          %li
+                            %a{:href => "#footer"}
+                              = t '.contact'
+                          %li.twitter
+                            %a{:href => "https://twitter.com/r4k4n", :target => "_blank"}
+                              %i.fa.fa-twitter
+                          %li.instagram
+                            %a{:href => "https://www.instagram.com/starfish_gcc", :target => "_blank"}
+                              %i.fa.fa-instagram
+                
+                  / navbar end
+                / main-navigation end
+              / header-right end
+      / header end
+    / header-container end

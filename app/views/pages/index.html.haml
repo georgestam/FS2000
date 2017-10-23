@@ -1,0 +1,24 @@
+/ scrollToTop
+/ ================
+
+:sass
+  .linked
+    display: block
+    position: relative
+    top: -45px
+    visibility: hidden
+      
+  .top-margin
+    margin: 20px 0 0 0 !important
+
+
+- content_for :title, I18n.t('views.starfish_title')
+
+.scrollToTop.circle
+  %i.icon-up-open-big
+= render 'home'
+= render 'summary'
+= render 'who_we_are'
+= render 'courses'
+= render 'media'
+= render 'team'

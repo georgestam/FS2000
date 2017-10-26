@@ -7,9 +7,9 @@ Course.destroy_all
 
 admin = User.new({
 
-    email: "rakan@starfishproject.ae",
+    email: "fs2000@aes-uk.com",
     password: "password10",
-    name: "rakan",
+    name: "John",
     admin: true
     })
 

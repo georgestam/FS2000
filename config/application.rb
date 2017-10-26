@@ -28,7 +28,7 @@ module FS2000
       elsif staging?
         'sf-uea-staging.herokuapp.com'
       else
-        'starfishproject.io'
+        'fs2000.herokuapp.com'
       end
     end
 

@@ -2,7 +2,7 @@
 
 class ApplicationMailer < ActionMailer::Base
 
-  default from: 'rakan@starfishproject.ae'
+  default from: 'fs2000@aes-uk.com'
   
   def self.inherited(subclass)
     subclass.default template_path: "mailers/#{subclass.name.to_s.underscore}"

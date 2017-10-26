@@ -1,2 +1,1 @@
-Source code of [FS2000 website](https://starfishproject.io/). 
-Developed using RoR 5 and `rails_admin` as CMS.
+Ruby on Rails Source code for the [FS2000 website](https://fs2000.herokuapp.com/)

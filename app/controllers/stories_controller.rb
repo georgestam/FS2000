@@ -1,7 +1,6 @@
 class StoriesController < ApplicationController
   
   skip_before_action :authenticate_user!, only: %i[index show]
-  before_action :set_text_direction, only: %i[index show]
   
   def index
     @stories = Story.where(locale: I18n.locale)

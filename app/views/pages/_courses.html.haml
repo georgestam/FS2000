@@ -18,30 +18,7 @@
           %span.text-default 
             = t ".upcoming_courses"
         .separator-2
-        - if @courses.any?
-          - @courses.reverse.each do |course|
-            .small
-              %i.fa.fa-calendar.pr-10
-              = t ".start"
-              = ":"
-              = course.date_start.strftime("%A, %d %b %Y")
-              = succeed course.time_start.strftime("%l %M %p") do
-                %i.fa.fa-clock-o.pl-10.pr-10
-              %br
-              %i.fa.fa-calendar.pr-10
-              = t ".finish"
-              = ":"
-              = course.date_finish.strftime("%A, %d %b %Y") 
-            %h5
-              %i.fa.fa-map-marker.pr-10
-              = course.location 
-            = course.description
-            %hr
-          %a.btn.btn-gray-transparent.btn-sm.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
-            = t '.apply_now'
-            %i.fa.fa-arrow-right.pl-20
-          %br
-        
+      
 
 / section start
 / ================
@@ -54,7 +31,7 @@
         %h3
           %strong 
             = t '.courses'
-        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.courses if Stat.any?}"} 0
+        %span.counter{"data-speed" => "5000", "data-to" => "300"} 0
     .col-md-4.col-xs-12.text-center
       .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
         %span.icon.default-bg.large.circle
@@ -62,7 +39,7 @@
         %h3
           %strong 
             = t '.graduates'
-        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.refreshers if Stat.any?}"} 0
+        %span.counter{"data-speed" => "5000", "data-to" => "1000"} 0
     .col-md-4.col-xs-12.text-center
       .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
         %span.icon.default-bg.large.circle
@@ -70,7 +47,7 @@
         %h3
           %strong 
             = t '.working_hours' 
-        %span.counter{"data-speed" => "5000", "data-to" => "#{Stat.last.working_hours if Stat.any?}"} 0
+        %span.counter{"data-speed" => "5000", "data-to" => "100"} 0
   / footer top start
   / ================
 

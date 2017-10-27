@@ -27,28 +27,13 @@ class ApplicationController < ActionController::Base
   end
   
   def set_locale #  i18n
-    I18n.locale = params[:locale] || current_user.try(:locale) || extract_locale_from_accept_language_header || :ar
+    I18n.locale = params[:locale] || current_user.try(:locale)
     yield
     I18n.locale = I18n.default_locale
   end
   
   def default_url_options
     { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
-  end
-  
-  private
-  
-  def set_text_direction 
-    @direction = if I18n.locale == :ar
-      # "rtl"
-    else 
-      "ltr"
-    end 
-  end 
-  
-  def extract_locale_from_accept_language_header
-    language = request.env['HTTP_ACCEPT_LANGUAGE'].presence
-    language ? HttpAcceptLangParser.parse(language) : nil
   end
   
 end

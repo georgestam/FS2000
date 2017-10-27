@@ -4,7 +4,7 @@ module Users
       
       def welcome(user_id)
         @user = User.find(user_id)
-        welcome = t '.welcome_to_starfish'
+        welcome = t '.welcome'
         mail(
           to:       @user.email,
           subject:  "#{welcome} #{@user.name.capitalize}!"

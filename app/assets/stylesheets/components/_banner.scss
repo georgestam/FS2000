@@ -6,7 +6,7 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover;
   display: flex;
-  align-items: center;
+  align-items: bottom;
   justify-content: left;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4)
 }
@@ -19,7 +19,7 @@
 }
 
 .banner-content {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .banner h1 {

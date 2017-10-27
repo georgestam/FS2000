@@ -3,14 +3,14 @@
     width: 200px
 
 #banner
-  .banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("ST-UEA/starfish1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
+  .banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("fs2000/home1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
     .banner-content
       %h1.logo-font-project.fadeInRightBig.animated 
-        = t '.home_title'
+        = FS2000
       %p.normal.fadeInLeftBig.animated
-        = t '.home_subtitle_1'
+        = "Simple structural and pipework analysis"
         %br
-        = t '.home_subtitle_2' 
+        = "for complex solutions" 
       %p
         .hidden-xs
           %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
@@ -18,9 +18,10 @@
             %i.fa.fa-arrow-right.pl-20
     .col-md-12.text-center.banner-arrow
       %a.btn.btn-lg.moving.smooth-scroll{:href => "#subscribe"}
-        -# %i.icon-down-open-big
-        -# %i.icon-down-open-big
-        -# %i.icon-down-open-big
+        %i.icon-down-open-big
+        %i.icon-down-open-big
+        %i.icon-down-open-big
+      
 
 / section start
 / ================

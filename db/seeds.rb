@@ -6,7 +6,7 @@ Story.destroy_all
 
 admin = User.new({
 
-    email: "fs2000@fs2000.com",
+    email: "contact@fs2000.com",
     password: "password10",
     name: "John",
     admin: true

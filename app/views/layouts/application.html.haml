@@ -30,16 +30,27 @@
   / "transparent-header": makes the header transparent and pulls the banner to top
   / "gradient-background-header": applies gradient background to header
   / "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html)
-  %body.no-trans.front-page.transparent-header
-    / move this to the bottom once remove js home page
-    
-    = render 'shared/navbar_selector'
-    = render 'shared/flashes'
-    = yield
+  %body.front-page
+    .scrollToTop.circle
+      %i.icon-up-open-big
+    .page-wrapper
+    / page wrapper start
+    / ================
+    .page-wrapper
+      / header-container start
+      .header-container
+        / header-top start
+        / classes:
+        / "dark": dark version of header top e.g. class="header-top dark"
+        / "colored": colored version of header top e.g. class="header-top colored"
+        / ================
+        = render 'shared/navbar_selector'
+        = render 'shared/flashes'
+        = yield
     = render 'shared/footer'
+        
     = javascript_include_tag 'application'
     -# google analitics
-    
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

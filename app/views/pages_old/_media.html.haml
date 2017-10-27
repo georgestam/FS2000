@@ -1,0 +1,69 @@
+:sass
+
+  .story-margin
+    margin: 0 0 20px 0 !important
+  
+  #story-picture
+    display: inline !important
+
+%section.pv-30.light-gray-bg.padding-bottom-clear
+  .space-bottom
+    .owl-carousel.content-slider
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            .testimonial.text-center
+              .testimonial-image
+                = cl_image_tag "ST-UEA/IMG_0810.jpg", class:"img-circle", :title => "", :client_hints=>true, 
+                :transformation=>[{:width=>400, :height=>400, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                {:width=>300, :crop=>"scale"}]
+              %h3 
+                = t '.testimonial1_short_recomendation'
+              .separator
+              .testimonial-body
+                %blockquote
+                  %p 
+                    = t '.testimonial1_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial1_name'
+                .testimonial-info-2 
+                  = t '.testimonial1_title'
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            .testimonial.text-center
+              .testimonial-image
+                = cl_image_tag "ST-UEA/Testimonial_2.jpg", class:"img-circle", :title => "", :client_hints=>true, 
+                :transformation=>[{:width=>600, :height=>600, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                {:width=>300, :crop=>"scale"}]
+              %h3 
+                = t '.testimonial2_short_recomendation'
+              .separator
+              .testimonial-body
+                %blockquote
+                  %p 
+                    = t '.testimonial2_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial2_name'
+                .testimonial-info-2 
+                  = t '.testimonial2_title'
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            .testimonial.text-center
+              .testimonial-image
+                = cl_image_tag "ST-UEA/Testimonial_3.jpg", class:"img-circle", :title => "", :client_hints=>true, 
+                :transformation=>[{:width=>600, :height=>600, x: 400, y: 80, :radius=>"max", :crop=>"crop"}]
+              %h3 
+                = t '.testimonial3_short_recomendation'
+              .separator
+              .testimonial-body
+                %blockquote
+                  %p 
+                    = t '.testimonial3_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial3_name'
+                .testimonial-info-2 
+                  = t '.testimonial3_title'
+/ section end
+/ section end

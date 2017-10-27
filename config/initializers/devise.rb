@@ -4,7 +4,7 @@ Devise.setup do |config|
   config.case_insensitive_keys = [:email]
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
   config.expire_all_remember_me_on_sign_out = true
-  config.mailer_sender = "fs2000@fs2000.com"
+  config.mailer_sender = "contact@fs2000.com"
   config.password_length = Rails.env.development? ? 1..72 : 10..255
   config.reconfirmable = true
   config.remember_for = 6.weeks

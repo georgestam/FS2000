@@ -20,7 +20,7 @@
               %a{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#fourth", :role => "tab"} 
                 = t '.what_is_stuttering'
           / Tab panes
-          .tab-content{dir: @dir}
+          .tab-content
             #first.tab-pane.fade.in.active{:role => "tabpanel"}
               .embed-responsive.embed-responsive-16by9
                 %iframe.embed-responsive-item{:allowfullscreen => "", :frameborder => "0", :height => "480", :src => "https://www.youtube.com/embed/ELVs1hHnfV4?rel=0&showinfo=0", :width => "853"}
@@ -30,12 +30,6 @@
               = t '.the_starfish_story_description_html'
             #fourth.tab-pane.fade{:role => "tabpanel"}
               = t '.what_is_stuttering_description_html'
-      -# .col-md-6{dir: @dir}
-      -#   %p
-      -#     %strong 
-      -#       = t ".who_we_are_title"
-      -#   %p 
-      -#     = t ".who_we_are_description_html"
   %br/      
 / section end
 

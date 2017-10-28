@@ -15,6 +15,10 @@ class User < ApplicationRecord
 
   private
   
+  def admin?
+    self.admin ? true : false
+  end 
+  
   def password_required?
     super if self.admin
   end

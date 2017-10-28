@@ -30,13 +30,23 @@
         / header-top-second start
         / ================
         #header-top-second.clearfix.text-right
-          .btn-group
-            %a.btn.btn-default.btn-sm{:href => "page-signup.html"}
-              %i.fa.fa-user.pl-2
-              Sign Up
-          .btn-group
-            %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
-              %i.fa.fa-lock.pl-2
-              Login
+          -# .btn-group
+          -#   %a.btn.btn-default.btn-sm{:href => "page-signup.html"}
+          -#     %i.fa.fa-user.pl-2
+          -#     Sign Up
+          - unless current_user.try(:admin?)
+            = link_to "/admin" do
+              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
+                %i.fa.fa-lock.pl-2
+                Admin panel
+          - if current_user
+            = link_to root_path do
+              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
+                Dashboard access
+          - else 
+            = link_to root_path do
+              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
+                %i.fa.fa-user.pl-2
+                Login
         / header-top-second end
 / header-top end

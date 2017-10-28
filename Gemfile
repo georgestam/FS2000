@@ -50,6 +50,7 @@ gem 'simple_calendar', '~> 2.2'
 gem 'simple_form'
 gem 'therubyracer', '~> 0.12'
 gem 'tod', '~> 2.1'
+gem "typedjs-rails", "~> 1.0"
 gem 'uglifier', '~> 3'
 gem 'unicorn', '~> 5.2'
 gem 'validates_email_format_of', '~> 1.6', '>= 1.6.3'

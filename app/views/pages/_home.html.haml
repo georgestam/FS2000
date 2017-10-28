@@ -1,6 +1,30 @@
 :sass
   .large-button
     width: 200px
+    
+:css
+
+  .typed-cursor {
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+  }
+  @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  @-webkit-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  @-moz-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
 
 #banner
   .banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("fs2000/home1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
@@ -10,7 +34,9 @@
       %p.normal.fadeInLeftBig.animated
         = "Simple FE analyses and design software"
         %br
-        = "for complex enviroments" 
+        for
+        %span.element
+        
       %p
         .hidden-xs
           %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
@@ -22,5 +48,19 @@
         %i.icon-down-open-big
         %i.icon-down-open-big
 
-
-                      
+- content_for(:after_js) do
+  :javascript
+    $(document).ready(function(){
+      
+      var options = {
+      strings: ["^0 complex enviroments ^4000", "pipelines ^2000", "subsea structures ^2000", "piperwork ^2000", "risers ^2000","jackets ^2000","manifolds ^2000", "lifting operations ^2000", "pipeline installation ^2000",  "dropping objets ^2000", "tie-in spools ^2000", "..."],
+      typeSpeed: 0,
+      fadeOut: true,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500, // milliseconds
+      loop: true
+    }
+    
+      $(".element").typed(options)
+    });
+     

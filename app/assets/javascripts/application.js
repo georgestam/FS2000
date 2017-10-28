@@ -26,4 +26,6 @@
 //= require js/custom.js
 
 
+//= require typed
+
 

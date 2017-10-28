@@ -1,0 +1,97 @@
+:sass
+  .margin-left
+    margin: 0 0 0 20px
+
+#clients.linked
+.container
+  .row
+    .col-md-8.col-md-offset-2
+      %h2.text-center
+        %strong
+          = "Clients"
+      .separator
+  .row
+    .col-sm-12
+      .owl-carousel.reverse{ style: "margin: 0 0 50px 0" }
+        .client
+          %a{:href => "https://www.stammering.org/"}
+            = cl_image_tag("fs2000/Subsea7.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 0")
+        .client
+          %a{:href => "http://ffwdlondon.com/"}
+            = cl_image_tag("fs2000/bp-responsive.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 90px; margin: 0 0 0 60px")
+        .client
+          %a{:href => "https://innovateuk.blog.gov.uk/"}
+            = cl_image_tag("fs2000/wood_group_logo_detail.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 40px")
+        .client
+          %a{:href => "http://www.reading.ac.uk/"}
+            = cl_image_tag("fs2000/total_logo.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 0")
+        .client
+          %a{:href => "https://www.newable.co.uk/"}
+            = cl_image_tag("fs2000/logo.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 0px")
+    .col-sm-12
+      .owl-carousel.carousel-autoplay{ style: "margin: 0 0 0 0" }
+        .client
+          %a{:href => "http://www.londonandpartners.com/"}
+            = cl_image_tag("fs2000/Xodus_Group.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 70px")
+        .client
+          %a{:href => "http://www.medcityhq.com/"}
+            = cl_image_tag("fs2000/logo_1x.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 50px; margin: 0 0 0 10px")
+        .client
+          %a{:href => "http://stammertrust.co.uk/"}
+            = cl_image_tag("fs2000/Penspen_d951f.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 50px")
+        .client
+          %a{:href => "https://www.newable.co.uk/"}
+            = cl_image_tag("fs2000/1200px-Shell_logo.svg.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 80px; margin: 0 0 0 50px")
+        .client
+          %a{:href => "https://www.newable.co.uk/"}
+            = cl_image_tag("fs2000/intec.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], style: "height: 50px; margin: 0 0 0 0px")
+      .separator
+      
+/ section start
+/ ================
+%section.pv-40.stats.padding-bottom-clear.parallax.dark-translucent-bg.background-img-7{:style => "background-position: 50% 50%;"}
+  .clearfix
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-diamond
+        %h3
+          %strong 
+            = "Active Years"
+        %span.counter{"data-speed" => "5000", "data-to" => "#{DateTime.current.year - 1997}"} 0
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-users
+        %h3
+          %strong 
+            = "Active Clients"
+        %span.counter{"data-speed" => "5000", "data-to" => "81"} 0
+    .col-md-4.col-xs-12.text-center
+      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
+        %span.icon.default-bg.large.circle
+          %i.fa.fa-cloud-download
+        %h3
+          %strong 
+            = "Countries"
+        %span.counter{"data-speed" => "5000", "data-to" => "12"} 0
+  / footer top start
+  / ================
+
+  .footer-top.animated-text{:style => "background-color:rgba(0,0,0,0.3);"}
+    .container
+      .row
+        .col-md-12
+          .call-to-action.text-center
+            .row
+              .col-sm-8
+                %h2 
+                  = "Download FS2000"
+                %h2 
+                  = "Improve your productivity today"
+              .col-sm-4
+                %p.mt-10
+                  %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
+                    = 'Free trial'
+                    %i.fa.fa-arrow-right.pl-20
+/ section end

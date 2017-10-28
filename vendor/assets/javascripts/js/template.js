@@ -862,6 +862,13 @@
         navigation: true,
         navigationText: false
       });
+      $(".owl-carousel.reverse").owlCarousel({
+        items: 4,
+        autoPlay: 10000,
+        pagination: false,
+        navigation: true,
+        navigationText: false
+      });
       $(".owl-carousel.clients").owlCarousel({
         items: 6,
         autoPlay: true,

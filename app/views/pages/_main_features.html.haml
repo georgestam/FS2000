@@ -189,20 +189,18 @@
                                 Group attribute controlled averaging proces
                       
                 #second.tab-pane.fade{:role => "tabpanel"}
-                  %section.section.clearfix
+                  %section
                     .container
                       .row
-                        .col-md-5
+                        .col-md-6
                           = "Model generation and load definition can be driven from text based commands since all definition data is in the form of text files but the interactive/graphical approach is far more effective in all respects. Virtually all definition data can be shown graphically, this includes dimensioning, properties, effective length data, loads etc. By using Saved Views all definition data can be reproduced graphically on paper in the same manner in which it was defined. Using Saved Views and conventional tabular output the process of model definition and model QA be can extremely thorough and efficient."
-                          
-                          	
-                          .owl-carousel.content-slider-with-controls{ style: "padding: 20px 50px 0 50px"}
+                          .owl-carousel.content-slider-with-controls{ style: "padding: 20px 70px 0 70px"}
                             .overlay-container.overlay-visible
                               = cl_image_tag("fs2000/main_features/fs2000.gif", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1250, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
                               .overlay-bottom.hidden-xs
                               %a.popup-img.overlay-link{:href => "http://res.cloudinary.com/georgestam/image/upload/v1509138267/fs2000/main_features/fs2000.gif", title: I18n.t("views.pages.summary.image_title3")}
                                 %i.icon-plus-1
-                        .col-md-7
+                        .col-md-6
                           #accordion-2.panel-group.collapse-style-2
                             .panel.panel-default
                               .panel-heading
@@ -302,9 +300,3 @@
           -#       %a.popup-img.overlay-link{:href => "https://res.cloudinary.com/georgestam/image/upload/v1509136527/fs2000/main_features/PipeClamp.gif", title: I18n.t("views.pages.summary.image_title3")}
           -#         %i.icon-plus-1
       / main end
-
-/ section start
-/ ================
-
-= "Modular Approach"
-= "FS2000 is formed from a core module and series of integrated optional modules. The core module of FS2000 provides an interactive graphical environment for model generation, analysis and results output. Optional pre and post processing modules provide load generation, design checks or specific analysis features suited to specialised areas of interest. This enables the user to purchase only the modules that suit their particular requirements. Modules can be added to FS2000 at any subsequent time as and when the user's analysis requirements change. The optional modules are broadly categorised by the menu options on the left. All modules are developed by AES and seamlessly integrate with the core module when performing the different stages of analysis."

@@ -44,11 +44,14 @@
                     / main-menu
                     %ul.nav.navbar-nav
                       %li.nav-item
-                        %a{:href => "#main-features"} Main Features
+                        %a{:href => "#{current_page?(action: 'index') ? '#main-features' : '/#main-features' }"} 
+                          = "Main Features"
                       %li.nav-item
-                        %a{:href => "#clients"} Clients
+                        %a{:href => "#{current_page?(action: 'index') ? '#clients' : '/#clients' }"}
+                          ="Clients"
                       %li.nav-item
-                        %a{:href => "#modular_approach"} Modules
+                        %a{:href => "#{current_page?(action: 'index') ? '#modular_approach' : '/#modular_approach' }"}
+                          = "Modules"
                         -# %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}
                         -#   %li
                         -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
@@ -87,19 +90,20 @@
                         -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                         -#       Fatigue
                       %li.nav-item
-                        %a{:href => "#contact_us"} Contact
+                        %a{:href => "#{current_page?(action: 'index') ? '#contact_us' : '/#contact_us' }"}
+                          = "Contact"
                       %li.nav-item.dropdown
                         %a#third-dropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "/support"} Support
                         %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}
                           %li
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                              Forum
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#training"}
+                              Training
                           %li
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#tutorials"}
                               Tutorials
                           %li
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                              Training
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#forum"}
+                              Forum
                                           
                     / main-menu end
                     / header buttons

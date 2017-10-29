@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     
     get "/form", to: "pages#form", as: :form
     
+    get "/support", to: "pages#support", as: :support
+    
     resources :pages, only: %i[index] 
   
     resources :articles, only: %i[index show]

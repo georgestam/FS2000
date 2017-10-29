@@ -18,7 +18,7 @@ class SubscribeToNewsletterService
           }
         }
       )
-  rescue => e
+  rescue StandardError => e
     Rails.logger.error e
     raise e unless development?
   end

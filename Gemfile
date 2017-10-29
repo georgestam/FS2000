@@ -73,7 +73,7 @@ end
 group :development, :test do
   gem 'letter_opener', '~> 1.4', '>= 1.4.1'
   gem 'listen', '~> 3.0.5'
-  gem 'rubocop', '~> 0.48.1'
+  gem 'rubocop'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

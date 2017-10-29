@@ -71,6 +71,7 @@ group :staging, :development, :test do
 end
 
 group :development, :test do
+  gem 'i18n-tasks'
   gem 'letter_opener', '~> 1.4', '>= 1.4.1'
   gem 'listen', '~> 3.0.5'
   gem 'rubocop'

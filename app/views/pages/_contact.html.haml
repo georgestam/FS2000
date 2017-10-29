@@ -1,0 +1,48 @@
+:sass
+
+#contact_us.linked
+%section.section.pv-40.clearfix
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        %h3.title.text-center
+          Contact
+          %span.text-default 
+            us
+        .separator
+        %p.lead.text-center 
+          Your all-in-one solution for advanced and simple pipeline, structural and pipework analyses. 
+
+    .row
+      .col-lg-6
+        %h3.title
+        %p
+          Licenses are available on a single payment perpetual license basis with optional technical and upgrade support or a lease basis which includes both technical and upgrade support. The minimum lease period is 3 months.
+          %br
+          %br
+          If you require license costs or any additional information on the FS2000 modules please contact AES  on 
+          = succeed "." do
+            %a{:href => "mailto:sales@fs2000.com"}
+              sales@fs2000.com
+        %ul.list-icons
+          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "100"}
+            %i.icon-check-1
+            Low cost
+          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "100"}
+            %i.icon-check-1
+            Extremly Simple to Use
+          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "150"}
+            %i.icon-check-1
+            Modules are fully integrated and the system can be added to on an 'as and when requirements dictate' basis.
+          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "200"}
+            %i.icon-check-1
+            Support is provided free of charge for a period of 6 months from date of purchase. 
+          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "250"}
+            %i.icon-check-1
+            Technical support is available to all registered users.
+          
+      .col-lg-6.mb-4
+        .overlay-container.overlay-visible{style: "margin-top: 20px"}
+          = cl_image_tag("fs2000/field.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1250, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
+          
+            

@@ -76,10 +76,10 @@
                       .panel.panel-default
                         .panel-heading
                           %h4.panel-title
-                            %a{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseOne-2"}
+                            %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseOne-2"}
                               %i.fa.fa-check.pr-10>
-                              Loading
-                        #collapseOne-2.panel-collapse.collapse.in
+                              Loads
+                        #collapseOne-2.panel-collapse.collapse
                           .panel-body
                             %ul.list-icons{ style: "line-height: 1" }
                               %li
@@ -103,18 +103,6 @@
                         #collapseTwo-2.panel-collapse.collapse
                           .panel-body
                             %ul.list-icons{ style: "line-height: 1" }
-                              %li
-                                %i.icon-check-1
-                                We are here to support you
-                              %li
-                                %i.icon-check-1
-                                Free updates
-                              %li
-                                %i.icon-check-1
-                                Unlimited options and variations
-                              %li
-                                %i.icon-check-1
-                                ipsam asperiores fugiat quo
                               %li
                                 %i.icon-check-1
                                 Beam elements
@@ -154,10 +142,10 @@
                       .panel.panel-default
                         .panel-heading
                           %h4.panel-title
-                            %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseThree-2"}
+                            %a{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseThree-2"}
                               %i.fa.fa-check.pr-10>
-                              Output
-                        #collapseThree-2.panel-collapse.collapse
+                              Output Results
+                        #collapseThree-2.panel-collapse.collapse.in
                           .panel-body
                             %ul.list-icons{ style: "line-height: 1" }
                               %li
@@ -201,68 +189,68 @@
                               %a.popup-img.overlay-link{:href => "http://res.cloudinary.com/georgestam/image/upload/v1509138267/fs2000/main_features/fs2000.gif", title: I18n.t("views.pages.summary.image_title3")}
                                 %i.icon-plus-1
                         .col-md-6
-                          #accordion-2.panel-group.collapse-style-2
+                          #accordion-3.panel-group.collapse-style-2
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseOne-2"}
+                                  %a{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseFour-3"}
                                     %i.fa.fa-check.pr-10>
                                     Model Definition
-                              #collapseOne-2.panel-collapse.collapse.in
+                              #collapseFour-3.panel-collapse.collapse.in
                                 .panel-body
                                   Model geometry, loading and design check parameters can be defined in a 3D interactive graphical environment or can be defined using an interpreted text file containing command line instructions. Both modes of definition can be simultaneously used without the loss of comment lines.
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseTwo-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseFive-3"}
                                     %i.fa.fa-check.pr-10>
                                     Graphical Data Checking
-                              #collapseTwo-2.panel-collapse.collapse
+                              #collapseFive-3.panel-collapse.collapse
                                 .panel-body
                                   Virtually all definition data can be shown graphically, this includes properties, loading values, effective lengths etc. Views may even be dimensioned. This enables all model QA checks to be done in the same manner that the model is created i.e. graphically.
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseThree-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseSix-3"}
                                     %i.fa.fa-check.pr-10>
                                     Groups
-                              #collapseThree-2.panel-collapse.collapse
+                              #collapseSix-3.panel-collapse.collapse
                                 .panel-body
                                   Groups may be used to provide a powerful secondary numbering system for nodes or elements. Groups can be used as a selection and sort option in virtually all aspects of model manipulation and output. This feature is considered an absolute essential for the efficient control of large models.
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseFour-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseSeven-3"}
                                     %i.fa.fa-check.pr-10>
                                     Saved Views
-                              #collapseFour-2.panel-collapse.collapse
+                              #collapseSeven-3.panel-collapse.collapse
                                 .panel-body
                                   Model plots may be saved and recovered. The save views are not simply graphical images but view settings which always reflect the current state of the model when re-played. The saved views are not restricted to definition plots but may also include results plots e.g. utilisation plots or stress contour plots. Static graphical images (BMP & WMF) can also be created.                            
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseFive-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseEight-3"}
                                     %i.fa.fa-check.pr-10>
                                     Batch Processing
-                              #collapseFive-2.panel-collapse.collapse
+                              #collapseEight-3.panel-collapse.collapse
                                 .panel-body
                                   In addition to using the interactive menus to control the analysis process the process can be controlled using command line instructions in a text batch control file. The batch control file can be formed by using batch emulation buttons on the interactive Windows input forms. These convert the form settings to command line switches which are then appended to the batch file. By emulating the interactive process in a batch file future runs can be completely automated.
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseSix-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseNine-3"}
                                     %i.fa.fa-check.pr-10>
                                     Multiple Reports
-                              #collapseSix-2.panel-collapse.collapse
+                              #collapseNine-3.panel-collapse.collapse
                                 .panel-body
                                   Using Sub-Cases any number of separate results reports can be created for a single results case. Typically one could be created for selected nodal deflection and one for selected member joint loads. Separate structural and pipework design reports can also be created for the same results case. Sub-Case reports which can also be applied to formatted definition data provide a high degree of selectivity which enable the user to create concise final reports without having to include all results data.
                             .panel.panel-default
                               .panel-heading
                                 %h4.panel-title
-                                  %a.collapsed{"data-parent" => "#accordion-2", "data-toggle" => "collapse", :href => "#collapseSeven-2"}
+                                  %a.collapsed{"data-parent" => "#accordion-3", "data-toggle" => "collapse", :href => "#collapseTen-3"}
                                     %i.fa.fa-check.pr-10>
                                     Report Collation
-                              #collapseSeven-2.panel-collapse.collapse
+                              #collapseTen-3.panel-collapse.collapse
                                 .panel-body
                                   When output is required to be printed the Report Collation utility may be used to organise final printed reports. This utility can be used to automatically form a final printed report by collecting all formatted output data (definition and results). Data may also be selected individually by the user. Multiple reports can be created which enable the user to create final printed reports of a concise nature.    
             

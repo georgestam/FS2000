@@ -1,62 +1,54 @@
 
+/ .footer start
+/ ================
+#footer.clearfix
+.footer
+  .container
+    .footer-inner
+      .row
+        .col-md-6.col-md-offset-3
+          .footer-content.text-center
+            .div{ style: "margin-bottom: 50px"}
+              = cl_image_tag "fs2000/logo_only.png",                               
+                client_hints: true,                                                                
+                transformation: [{:dpr=>"auto", :height=>100, :y=>0, :x=>0, :crop=>"fill"}], 
+                class: "logo-footer",                             
+                style: "display: inline !important"
+            %ul.list-inline.mb-20
+              %li
+                %a.link-dark{:href => "mailto:sales@fs2000.com"}
+                  %i.text-default.fa.fa-envelope-o.pl-10.pr-5>
+                  sales@fs2000.com
+              %li
+                %a.link-dark{:href => "mailto:contact@fs2000.com"}
+                  %i.text-default.fa.fa-envelope-o.pl-10.pr-5>
+                  contact@fs2000.com
+            %ul.list-inline.mb-20
+              %li
+                %i.text-default.fa.fa-map-marker.pr-5>
+                = "Bucklerburn House,"
+                = "School Road."
+                %br
+                = "Peterculter, Aberdeen."
+                = "AB14 0NP."
+                = "UK"
+            %ul.social-links.circle.animated-effect-1.margin-clear
+              %li.linkedin
+                %a{:href => "http://www.linkedin.com", :target => "_blank"}
+                  %i.fa.fa-linkedin
+            
+.subfooter
+  .container
+    .subfooter-inner
+      .row
+        .col-md-12
+          %p.text-center
+            Copyright © 
+            = "1997-"
+            = DateTime.now.year 
+            = "Analytical Services Ltd."
+            -# by
+            -# = succeed "." do
+              %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design 
+            All Rights Reserved
 
-%footer#footer.clearfix
-  / .footer start
-  / ================
-  .footer
-    .container
-      .footer-inner
-        .row
-          .col-xs-12.col-md-5.col-md-push-2
-            = cl_image_tag "ST-UEA/starfish-logo.png",                               
-              client_hints: true,                                                                
-              transformation: [{dpr:"auto", gravity:"", crop:"fill"}], 
-              class: "img-responsive center-block img-rounded-half",                             
-              style: "margin: 20px 0 20px 0"
-  
-          .col-xs-12.col-md-4.col-md-push-4
-            .footer-content
-              %h2.title 
-                = t('.contact_us')
-              .separator-2
-              %p 
-                = t('.contact_us_description')
-              %ul.social-links.circle.animated-effect-1
-                %li.twitter
-                  %a{:href => "https://twitter.com/r4k4n", :target => "_blank"}
-                    %i.fa.fa-twitter
-                %li.instagram
-                  %a{:href => "https://www.instagram.com/starfish_gcc", :target => "_blank"}
-                    %i.fa.fa-instagram
-              .separator-2
-              %ul.list-icons
-                %li
-                  %i.fa.fa-map-marker.pr-10.text-default
-                    = t '.starfish_address'
-                %li
-                  %i.fa.fa-phone.pr-10.text-default
-                    = t '.starfish_mobile'
-                %li
-                  %i.fa.fa-envelope-o.pr-10
-                    = t '.starfish_email'
-  / .footer end
-  / .subfooter start
-  / ================
-  
-  .subfooter
-    .container
-      .subfooter-inner
-        .row
-          .col-md-12
-            %p.text-center
-              Copyright © 
-              = "2016-"
-              = DateTime.now.year  
-              = t 'views.starfish_title'
-              by
-              = succeed "." do
-                %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design 
-              All Rights Reserved
-
-
-  / .subfooter end

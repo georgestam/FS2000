@@ -123,8 +123,6 @@ Metrics/ModuleLength:
   Enabled: false
 Metrics/ClassLength:
   Enabled: false
-Lint/LiteralInCondition:
-  Enabled: false
 Style/NestedTernaryOperator:
   Enabled: false
 Style/MultilineOperationIndentation:

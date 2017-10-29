@@ -1346,9 +1346,9 @@
     if($(".video-background").length>0) {
       if (Modernizr.touch) {
         $(".video-background").vide({
-          mp4: "videos/background-video.mp4",
-          webm: "videos/background-video.webm",
-          poster: "videos/video-fallback.jpg"
+          mp4: "//res.cloudinary.com/georgestam/video/upload/ac_none,q_70/v1509282087/fs2000/Ocean_Waves_small.mp4",
+          webm: "//res.cloudinary.com/georgestam/video/upload/ac_none,q_70/v1509282087/fs2000/Ocean_Waves_small.webm",
+          poster: "/assets/video-fallback.jpg"
         }, {
           volume: 1,
           playbackRate: 1,
@@ -1361,9 +1361,9 @@
         });
       } else {
         $(".video-background").vide({
-          mp4: "videos/background-video.mp4",
-          webm: "videos/background-video.webm",
-          poster: "videos/video-poster.jpg"
+          mp4: "//res.cloudinary.com/georgestam/video/upload/ac_none,q_70/v1509282087/fs2000/Ocean_Waves_small.mp4",
+          webm: "//res.cloudinary.com/georgestam/video/upload/ac_none,q_70/v1509282087/fs2000/Ocean_Waves_small.webm",
+          poster: "/assets/video-poster.jpg"
         }, {
           volume: 1,
           playbackRate: 1,
@@ -1380,9 +1380,9 @@
     if($(".video-background-banner").length>0) {
       if (Modernizr.touch) {
         $(".video-background-banner").vide({
-          mp4: "videos/background-video-banner.mp4",
-          webm: "videos/background-video-banner.webm",
-          poster: "videos/video-fallback.jpg"
+          mp4: "/assets/background-video-banner.mp4",
+          webm: "/assets/background-video-banner.webm",
+          poster: "/assets/video-fallback.jpg"
         }, {
           volume: 1,
           playbackRate: 1,
@@ -1395,9 +1395,9 @@
         });
       } else {
         $(".video-background-banner").vide({
-          mp4: "videos/background-video-banner.mp4",
-          webm: "videos/background-video-banner.webm",
-          poster: "videos/video-banner-poster.jpg"
+          mp4: "/assets/background-video-banner.mp4",
+          webm: "/assets/background-video-banner.webm",
+          poster: "/assets/video-banner-poster.jpg"
         }, {
           volume: 1,
           playbackRate: 1,

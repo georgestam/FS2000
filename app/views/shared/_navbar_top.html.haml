@@ -34,7 +34,7 @@
           -#   %a.btn.btn-default.btn-sm{:href => "page-signup.html"}
           -#     %i.fa.fa-user.pl-2
           -#     Sign Up
-          - unless current_user.try(:admin?)
+          - if current_user.try(:admin?)
             = link_to "/admin" do
               %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
                 %i.fa.fa-lock.pl-2

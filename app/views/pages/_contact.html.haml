@@ -40,9 +40,26 @@
           %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "250"}
             %i.icon-check-1
             Technical support is available to all registered users.
-          
+      
       .col-lg-6.mb-4
         .overlay-container.overlay-visible{style: "margin-top: 20px"}
           = cl_image_tag("fs2000/field.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1250, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
-          
+
+%section.section.video-background.background-img-1.default-translucent-bg
+  .container
+    .row
+      .col-md-12
+        .call-to-action.text-center
+          .row
+            .col-sm-8
+              %h1.title Don't Miss Out Our Offers
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quasi explicabo consequatur consectetur, a atque voluptate officiis eligendi nostrum.
+            .col-sm-4
+              %br/
+              %p
+                %a.btn.btn-lg.btn-gray-transparent.btn-animated{:href => "#"}
+                  Learn More
+                  %i.fa.fa-arrow-right.pl-20
+
+    
             

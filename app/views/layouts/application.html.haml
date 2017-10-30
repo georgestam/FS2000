@@ -43,7 +43,7 @@
       = render 'shared/navbar'
       = render 'shared/flashes'
       = yield
-      = render 'shared/footer'
+      = render 'shared/footer' unless devise_page?
   
     = javascript_include_tag 'application'
     = yield(:after_js)

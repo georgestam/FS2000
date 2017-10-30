@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :articles, only: %i[index show]
     
     resources :stories, only: %i[index show]
+    
+    resources :tutorials, only: %i[index show]
   
   end
   

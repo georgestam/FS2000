@@ -42,7 +42,12 @@
               .row
                 .col-sm-12.prose
                   %h8
-                    We deliver support and education by providing on-site training, tutorials and access to the FS2000 knowledge forum.
+                    We deliver support and education by providing on-site training,
+                    %span
+                      = link_to "tutorials", tutorials_path
+                    and access to  
+                    %span
+                      = link_to "FS2000 knowledge forum.", tutorials_path
                     %br
                     Technical support by phone is available to all registered users.
                   #training
@@ -76,6 +81,10 @@
                     = succeed "" do
                       %a{:href => "/"}
                         here. 
+                    %br
+                    We review daily the queries that FS2000 users post and answer them, if other FS2000 have not answer them already. 
+                    %br
+                    
                     The forum provides an excellent environment for learning from the worldwide community of FS2000 users, as well as having direct access to the most common questions that new users encounter when using FS2000.
                 
                   

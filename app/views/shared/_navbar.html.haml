@@ -44,13 +44,13 @@
                     / main-menu
                     %ul.nav.navbar-nav
                       %li.nav-item
-                        %a{:href => "#{current_page?(action: 'index') ? '#main-features' : '/#main-features' }"} 
+                        %a{:href => "#{homepage? ? '#main-features' : '/#main-features' }"} 
                           = "Main Features"
                       %li.nav-item
-                        %a{:href => "#{current_page?(action: 'index') ? '#clients' : '/#clients' }"}
+                        %a{:href => "#{homepage? ? '#clients' : '/#clients' }"}
                           ="Clients"
                       %li.nav-item
-                        %a{:href => "#{current_page?(action: 'index') ? '#modular_approach' : '/#modular_approach' }"}
+                        %a{:href => "#{homepage? ? '#modular_approach' : '/#modular_approach' }"}
                           = "Modules"
                         -# %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}
                         -#   %li
@@ -90,8 +90,8 @@
                         -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                         -#       Fatigue
                       %li.nav-item
-                        %a{:href => "#{current_page?(action: 'index') ? '#contact_us' : '/#contact_us' }"}
-                          = "Contact"
+                        %a{:href => "#{homepage? ? '#contact_us' : '/#contact_us' }"}
+                          = "Sales"
                       %li.nav-item.dropdown
                         %a#third-dropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "/support"} Support
                         %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}

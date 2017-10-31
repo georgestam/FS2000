@@ -2,10 +2,7 @@ class PagesController < ApplicationController
 
   skip_before_action :authenticate_user!, only: %i[index support coming_soon form]
 
-  def index
-    if user_signed_in?
-      redirect_to controller: :dashboard, action: :tutorials
-    end    
+  def index    
   end
   
   def support

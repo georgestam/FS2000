@@ -39,8 +39,11 @@
       / "dark": dark version of header top e.g. class="header-top dark"
       / "colored": colored version of header top e.g. class="header-top colored"
       / ================
-      = render 'shared/navbar_top'
-      = render 'shared/navbar'
+      - if homepage?
+        = render 'shared/navbar_top'
+        = render 'shared/navbar'
+      - else 
+        = render 'shared/navbar_dashboard'
       = render 'shared/flashes'
       = yield
       = render 'shared/footer' unless devise_page?

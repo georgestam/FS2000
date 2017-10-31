@@ -1,0 +1,128 @@
+:sass
+
+  .logo_img 
+    height: 25px
+    margin-top: 15px
+
+%body
+  %header.header.fixed.clearfix
+    .container
+      .row
+        .col-md-3
+          / header-left start
+          / ================
+          .header-left.clearfix
+            / logo
+            #logo.logo
+              %a{:href => "/"}
+                = image_tag 'logo/logo-small.png', class: 'img logo_img'
+          / header-left end
+        .col-md-9
+          / header-right start
+          / ================
+          .header-right.clearfix
+            / main-navigation start
+            / classes:
+            / "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick"
+            / "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated"
+            / "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns
+            / ================
+            .main-navigation.animated.with-dropdown-buttons
+              / navbar start
+              / ================
+              %nav.navbar.navbar-default{:role => "navigation"}
+                .container-fluid
+                  / Toggle get grouped for better mobile display
+                  .navbar-header
+                    %button.navbar-toggle{"data-target" => "#navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+                      %span.sr-only Toggle navigation
+                      %span.icon-bar
+                      %span.icon-bar
+                      %span.icon-bar
+                  / Collect the nav links, forms, and other content for toggling
+                  #navbar-collapse-1.collapse.navbar-collapse.scrollspy.smooth-scroll
+                    / main-menu
+                    %ul.nav.navbar-nav
+                      %li.nav-item
+                        %a{:href => "#{homepage? ? '#main-features' : '/#main-features' }"} 
+                          = "Main Features"
+                      %li.nav-item
+                        %a{:href => "#{homepage? ? '#clients' : '/#clients' }"}
+                          ="Clients"
+                      %li.nav-item
+                        %a{:href => "#{homepage? ? '#modular_approach' : '/#modular_approach' }"}
+                          = "Modules"
+                        -# %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Core Module
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Dynamics
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Member Design
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Tubular Joints
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Non-Linear Static
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Non-Linear Dynamic
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Enviromental loads
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Vessel Motions
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Seismic Loads
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Transportation
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Pile Analysis
+                        -#   %li
+                        -#     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        -#       Fatigue
+                      %li.nav-item
+                        %a{:href => "#{homepage? ? '#contact_us' : '/#contact_us' }"}
+                          = "Sales"
+                      %li.nav-item.dropdown
+                        %a#third-dropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "/support"} Support
+                        %ul.dropdown-menu{"aria-labelledby" => "third-dropdown"}
+                          %li
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#training"}
+                              Training
+                          %li
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#tutorials"}
+                              Tutorials
+                          %li
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/support#forum"}
+                              Forum
+                                          
+                    / main-menu end
+                    / header buttons
+                    .header-dropdown-buttons
+                      %a.btn.btn-sm.hidden-xs.btn.btn-gray-transparent{:href => "/tutorials"}
+                        Account
+                        %i.fa.fa-user.pl-5
+                      %a.btn.btn-lg.visible-xs.btn-block.btn.btn-gray-transparent{:href => "/tutorials"}
+                        Account
+                        %i.fa.fa-user.pl-5
+                      %a.btn.btn-sm.hidden-xs.btn-gray-transparent{:href => "#"}
+                        Sign out
+                        %i.fa.fa-times.pl-5
+                      %a.btn.btn-lg.visible-xs.btn-block.btn-gray-transparent{:href => "#"}
+                        Sign out
+                        %i.fa.fa-times.pl-5
+                    / header buttons end
+              / navbar end
+            / main-navigation end
+          / header-right end
+  / header end
+  / header-container end

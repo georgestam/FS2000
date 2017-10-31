@@ -1,1 +1,30 @@
 - content_for :title, "Tutorials"
+
+#main-content
+  .container
+    .description-center
+    .row
+      .col-xs-12.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1
+        .text-boxes
+          .row.text-box.text-box-title-above
+            .col-sm-12
+              %h2
+                = "Tutorials"
+              .toolbar
+                .btn.btn-link>
+            .row
+              .col-sm-3
+                = cl_image_tag "at/apple.jpg",                               
+                  client_hints: true,                                                                
+                  transformation: [{height: 180, width: 300, dpr:"auto", gravity:"", crop:"fill"}], 
+                  class: "img-responsive center-block img-rounded-half",                             
+                  style: "margin: 20px 0 20px 0"                           
+              .col-sm-9
+                %h4
+                  = "Bolted Clamp Design"
+                %p
+                  The object of this tutorial is to introduce users to a design checker that can be used to assess the design performance of tubular bolted clamps. The type of clamps that can be checked are those of the type commonly used to from a riser connections to offshore jackets and pipework support connections on subsea structures. The design checks are in accordance with the guidelines of OTH 88 283 or OSO 19902 or using specific interface friction coefficients.
+                = link_to "Download", asset_path("tutorials/Bolted_Clamp_Design.zip"), class: "btn btn-gray-transparent"
+          %hr.hr-half
+#scroll-to-top.fade
+  %i.fa.fa-chevron-up

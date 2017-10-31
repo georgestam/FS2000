@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: 'registrations' }
@@ -7,7 +5,6 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /en|es/ do
   
     root to: 'pages#index'
-    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
     get "/coming_soon", to: "pages#coming_soon", as: :coming_soon
     
@@ -21,7 +18,8 @@ Rails.application.routes.draw do
     
     resources :stories, only: %i[index show]
     
-    resources :tutorials, only: %i[index show]
+    # dashboard
+    get "/tutorials", to: "dashboard#tutorials", as: :tutorials
   
   end
   

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     
     # dashboard
     get "/tutorials", to: "dashboard#tutorials", as: :tutorials
+    get "/downloads", to: "dashboard#downloads", as: :downloads
   
   end
   

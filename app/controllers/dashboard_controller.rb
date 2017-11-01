@@ -4,4 +4,8 @@ class DashboardController < ApplicationController
     authorize(current_user)
   end
   
+  def downloads
+    authorize(current_user)
+  end
+  
 end

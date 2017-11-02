@@ -12,6 +12,14 @@ class User < ApplicationRecord
 
   after_create :send_welcome_email
   after_create :subscribe_to_newsletter, if: :production_or_staging?
+  
+  def update_with_password(params={})
+    if params[:password].blank?
+      params.delete(:password)
+      params.delete(:password_confirmation) if params[:password_confirmation].blank?
+    end
+    update_attributes(params)
+  end
 
   private
   

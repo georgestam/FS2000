@@ -6,7 +6,7 @@
   
   .navbar-nav
     float: none
-    margin: 0 0 0 150px
+    margin: 0 0 0 50px
   
 
 %body
@@ -49,14 +49,17 @@
                     / main-menu
                     %ul.nav.navbar-nav
                       %li.nav-item
-                        %a{:href => "/forum"} 
+                        %a#forum{:href => "/forum"} 
                           = "Forum"
                       %li.nav-item
-                        %a{:href => "/tutorials"}
+                        %a#tutorials{:href => "/tutorials"}
                           ="Tutorials"
                       %li.nav-item
-                        %a{:href => "/downloads"}
+                        %a#downloads{:href => "/downloads"}
                           ="Downloads"
+                      %li.nav-item
+                        %a#form{:href => "/form"}
+                          ="Feedback"
                       %li.nav-item
                         %a#support{:href => "/support"}
                           ="Support"

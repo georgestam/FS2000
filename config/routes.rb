@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
     get "/coming_soon", to: "pages#coming_soon", as: :coming_soon
     
-    get "/form", to: "pages#form", as: :form
-    
     get "/support", to: "pages#support", as: :support
     
     resources :pages, only: %i[index] 
@@ -21,6 +19,8 @@ Rails.application.routes.draw do
     # dashboard
     get "/tutorials", to: "dashboard#tutorials", as: :tutorials
     get "/downloads", to: "dashboard#downloads", as: :downloads
+    get "/forum", to: "dashboard#forum", as: :forum
+    get "/form", to: "dashboard#form", as: :form
   
   end
   

@@ -7,5 +7,13 @@ class UserPolicy < ApplicationPolicy
   def downloads?
     user
   end
+  
+  def forum?
+    user
+  end
+  
+  def form?
+    user
+  end
     
 end

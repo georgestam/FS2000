@@ -8,4 +8,12 @@ class DashboardController < ApplicationController
     authorize(current_user)
   end
   
+  def forum
+    authorize current_user
+  end
+  
+  def form 
+    authorize current_user
+  end 
+  
 end

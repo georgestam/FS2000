@@ -13,9 +13,37 @@
    }
 
 
-- content_for :title, "Support"
+- content_for :title, "forum"
 
-#support-site
+#forum-site
+
+.page-wrapper
+  / background image
+  / banner start
+  / ================
+  .pv-40.stats.padding-bottom-clear.parallax.dark-translucent-bg.background-img-7{style: "height: 100vh"}
+    .container
+      .row
+        .col-md-8.text-center.col-md-offset-2.pv-20
+          .object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "100"}
+            / logo
+            #logo.logo.text-center
+              %h3.margin-clear
+            / name-and-slogan
+            
+            %h1.page-title.text-center 
+              = t('.coming_soon')
+            .separator
+            %p.text-center
+            = t '.coming_soon_decription' 
+            %br
+            	
+            %ul.list-inline.mb-20.text-center
+            / countdown start
+            .countdown.clearfix
+            / countdown end
+      
+
 #main{:role => "main"}
   .hidden-xs.hidden-sm{class: "visiblr-md-* visible-lg-*"}
     .banner-small{style: "background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('#{cl_image_path("open-icebergs/contact2.jpg", client_hints: true, transformation: [{gravity: "xy_center", height: 1800, width: 4500, x: 0, y: 5000, crop: "crop", dpr: "auto"}])}');"}

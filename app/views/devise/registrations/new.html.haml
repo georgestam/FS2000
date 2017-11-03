@@ -10,5 +10,6 @@
       .form-inputs
         = f.input :name, required: true
         = f.input :email, required: true, autofocus: true
+        = f.input :password, required: true, input_html: { autocomplete: 'off' }
       .form-actions
-        = f.button :submit, "Sign up"
+        = f.button :submit, "Sign up", id: "signup"

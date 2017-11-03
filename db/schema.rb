@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170507110745) do
+ActiveRecord::Schema.define(version: 20171101093254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(version: 20170507110745) do
     t.integer  "x_mobile",    default: 1000
     t.integer  "y_mobile",    default: 200
     t.string   "gravity",     default: "south"
+  end
+
+  create_table "downloads", force: :cascade do |t|
+    t.string   "version"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -55,6 +62,14 @@ ActiveRecord::Schema.define(version: 20170507110745) do
     t.integer  "x_mobile",    default: 1000
     t.integer  "y_mobile",    default: 200
     t.string   "gravity",     default: ""
+  end
+
+  create_table "tutorials", force: :cascade do |t|
+    t.string   "description"
+    t.string   "title"
+    t.string   "file"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|

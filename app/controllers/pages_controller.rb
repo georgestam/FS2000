@@ -1,17 +1,11 @@
 class PagesController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: %i[index support coming_soon form]
+  skip_before_action :authenticate_user!, only: %i[index support forum form]
 
-  def index
+  def index    
   end
   
   def support
-  end 
-  
-  def coming_soon
-  end
-  
-  def form 
   end 
 
   private

@@ -40,12 +40,12 @@
                 %i.fa.fa-lock.pl-2
                 Admin panel
           - if current_user
-            = link_to root_path do
-              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
+            = link_to tutorials_path do
+              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret#dashboard
                 Dashboard access
           - else 
-            = link_to root_path do
-              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret
+            = link_to new_user_session_path do
+              %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret#login
                 %i.fa.fa-user.pl-2
                 Login
         / header-top-second end

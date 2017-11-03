@@ -35,7 +35,7 @@
               = t('.coming_soon')
             .separator
             %p.text-center
-            = t '.coming_soon_decription' 
+            = "A FS2000 forum is comming soon" 
             %br
             	
             %ul.list-inline.mb-20.text-center
@@ -43,82 +43,10 @@
             .countdown.clearfix
             / countdown end
       
-
-#main{:role => "main"}
-  .hidden-xs.hidden-sm{class: "visiblr-md-* visible-lg-*"}
-    .banner-small{style: "background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('#{cl_image_path("open-icebergs/contact2.jpg", client_hints: true, transformation: [{gravity: "xy_center", height: 1800, width: 4500, x: 0, y: 5000, crop: "crop", dpr: "auto"}])}');"}
-  .hidden-md.hidden-lg{class: "visible-xs-* visible-sm-*"}
-    .banner-small{style: "background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('#{cl_image_path("open-icebergs/contact2.jpg", client_hints: true, transformation: [{width: 2000, height: 1800, gravity: "xy_center", x: 6000, y: 2000, dpr: "auto", crop: "fill"}])}');"}
-  .container
-    %ol.breadcrumb
-      %li
-        %i.fa.fa-home.pr-10
-        %a{:href => "/"}
-          = t('.home')
-      %li.active
-        = "Support"
-  .container
-    .row
-      .col-xs-12.col-sm-push-1.col-sm-10
-        %div
-          .row.text-box-title-above.text-box-big-image
-            .col-sm-12
-              %h1.article-title
-                = "Support"
-              %p
-                %span
-              %hr{:style => "margin-bottom:10px"}/
-              .row
-                .col-sm-12.prose
-                  %h8
-                    We deliver support and education by providing on-site training,
-                    %span
-                      = link_to "tutorials", tutorials_path
-                    and access to  
-                    %span
-                      = link_to "FS2000 knowledge forum.", tutorials_path
-                    %br
-                    Technical support by phone is available to all registered users.
-                  #training
-                  %h3
-                    = "1. Training"
-                  %h8
-                    We can provide on-site training in the use of FS2000 geared directly to your specific analysis requirements.
-                    %br
-                    In addition to demonstrating the use of FS2000 we can also provide the user with a basic understanding of the fundamentals of structural modeling, its application and limitations relevant to typical or specific component designs.
-                    %br
-                    Training case studies need not be restricted to academic examples. Current design problems or design justifications may be used as case studies so that training not only gets the users 'up to speed' with FS2000 but also 'gets the job done'.
-                    %br
-                    If you require any additional information on FS2000 training please contact us at
-                    = succeed "" do
-                      %a{:href => "mailto:sales@fs2000.com"}
-                        sales@fs2000.com.
-                  #tutorials
-                  %h3
-                    = "2. Tutorials"
-                  %h8
-                    A comprehensive list of tutorials can be accessed
-                    = succeed "" do
-                      %a{:href => "/"}
-                        here, 
-                    covering most of the aspects that engineers encounter in the subsea and offshore industry. 
-                  #forum
-                  %h3
-                    = "3. Knowledge forum"
-                  %h8
-                    Access to the forum can be accessed
-                    = succeed "" do
-                      %a{:href => "/"}
-                        here. 
-                    %br
-                    We review daily the queries that FS2000 users post and answer them, if other FS2000 have not answer them already. 
-                    %br
-                    
-                    The forum provides an excellent environment for learning from the worldwide community of FS2000 users, as well as having direct access to the most common questions that new users encounter when using FS2000.
-                
-                  
-              %div
-                = link_to 'Back', root_path, class: "btn btn-gray-transparent", style: "margin-bottom: 20px"
+      
+            
+          %div
+            = link_to 'Back', root_path, class: "btn btn-gray-transparent", style: "margin-bottom: 20px"
 
 
 

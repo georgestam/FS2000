@@ -60,4 +60,19 @@
 
       ga('create', 'UA-89702518-5', 'auto');
       ga('send', 'pageview');
+      
+    -# userback
+    :javascript
+      Userback = window.Userback || {};
+      Userback.access_token = "#{ENV["USERBACK_TOKEN"]}";
+
+      (function(id) {
+          if (document.getElementById(id)) {return;}
+          var s = document.createElement('script');
+          s.id = id;
+          s.src = 'https://static.userback.io/widget/v1.js';
+          var parent_node = document.head || document.body;
+          parent_node.appendChild(s);
+      })('userback-sdk');
+
 

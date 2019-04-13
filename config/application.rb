@@ -28,7 +28,7 @@ module FS2000
       elsif staging?
         'sf-uea-staging.herokuapp.com'
       else
-        'fs2000.herokuapp.com'
+        'new-waves-design.herokuapp.com'
       end
     end
 
@@ -60,7 +60,7 @@ module FS2000
         config[:port] = self.port if self.port
         config[:protocol] = self.protocol
         config[:only_path] = false
-        
+
       end
     end
 

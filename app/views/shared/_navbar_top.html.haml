@@ -13,7 +13,7 @@
         .header-top-first.clearfix
           %ul.social-links.circle.small.clearfix.hidden-sm-down
             %li.linkedin
-              %a{:href => "http://www.linkedin.com", :target => "_blank"}
+              -# %a{:href => "http://www.linkedin.com", :target => "_blank"}
                 %i.fa.fa-linkedin
           -# %ul.list-inline
           -#   %li.list-inline-item
@@ -43,7 +43,7 @@
             = link_to tutorials_path do
               %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret#dashboard
                 Dashboard access
-          - else 
+          - else
             = link_to new_user_session_path do
               %button#header-top-drop-2.btn.dropdown-toggle.btn-default.btn-sm.dropdown-toggle--no-caret#login
                 %i.fa.fa-user.pl-2

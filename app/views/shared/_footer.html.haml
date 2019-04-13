@@ -13,46 +13,44 @@
         .col-md-6.col-md-offset-3
           .footer-content.text-center
             .div{ style: "margin-bottom: 50px"}
-              = cl_image_tag "fs2000/logo_only.png",                               
-                client_hints: true,                                                                
-                transformation: [{:dpr=>"auto", :height=>100, :y=>0, :x=>0, :crop=>"fill"}], 
-                class: "logo-footer",                             
+              = cl_image_tag "fs2000/logo_only.png",
+                client_hints: true,
+                transformation: [{:dpr=>"auto", :height=>100, :y=>0, :x=>0, :crop=>"fill"}],
+                class: "logo-footer",
                 style: "display: inline !important"
             %ul.list-inline.mb-20
               %li
-                %a.link-dark{:href => "mailto:sales@fs2000.com"}
+                %a.link-dark{:href => "sales@newwavesdesign.com"}
                   %i.text-default.fa.fa-envelope-o.pl-10.pr-5>
-                  sales@fs2000.com
-              %li
+                  sales@newwavesdesign.com
+              -# %li
                 %a.link-dark{:href => "mailto:contact@fs2000.com"}
                   %i.text-default.fa.fa-envelope-o.pl-10.pr-5>
-                  contact@fs2000.com
+                  sales@newwavesdesign.com
             %ul.list-inline.mb-20
               %li
                 %i.text-default.fa.fa-map-marker.pr-5>
-                = "Bucklerburn House,"
-                = "School Road."
+                = "75 Pittodrie Place"
                 %br
-                = "Peterculter, Aberdeen."
-                = "AB14 0NP."
+                = "Aberdeen,"
+                = "AB24 5QX."
                 = "UK"
             %ul.social-links.circle.animated-effect-1.margin-clear
               %li.linkedin
-                %a{:href => "http://www.linkedin.com", :target => "_blank"}
+                -# %a{:href => "http://www.linkedin.com", :target => "_blank"}
                   %i.fa.fa-linkedin
-            
+
 .subfooter
   .container
     .subfooter-inner
       .row
         .col-md-12
           %p.text-center
-            Copyright © 
-            = "1997-"
-            = DateTime.now.year 
-            = "Analytical Services Ltd."
+            Copyright ©
+            = "2012-"
+            = DateTime.now.year
+            = "New Waves Design Limited"
             -# by
             -# = succeed "." do
-              %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design 
+              %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design
             All Rights Reserved
-

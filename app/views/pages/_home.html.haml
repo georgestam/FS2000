@@ -1,7 +1,7 @@
 :sass
   .large-button
     width: 200px
-    
+
 :css
 
   .typed-cursor {
@@ -30,13 +30,13 @@
   .banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("fs2000/home1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
     .banner-content
       %h1.logo-font-project.fadeInRightBig.animated 
-        = "FS2000"
+        = "New Waves Design"
       %p.normal.fadeInLeftBig.animated
         = "Simple FE analyses and design software"
         %br
         for
         %span.element
-        
+
       %p
         .hidden-xs
           %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
@@ -51,7 +51,7 @@
 - content_for(:after_js) do
   :javascript
     $(document).ready(function(){
-      
+
       var options = {
       strings: ["^0 complex enviroments ^4000", "pipelines ^2000", "subsea structures ^2000", "piperwork ^2000", "risers ^2000","jackets ^2000","manifolds ^2000", "lifting operations ^2000", "pipeline installation ^2000",  "dropping objets ^2000", "tie-in spools ^2000", "..."],
       typeSpeed: 0,
@@ -60,7 +60,6 @@
       fadeOutDelay: 500, // milliseconds
       loop: true
     }
-    
+
       $(".element").typed(options)
     });
-     
